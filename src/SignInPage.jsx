@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Col, Row } from 'react-bootstrap';
 import { useAuth } from './AuthContext';
 import { UserProfile } from './UserProfile';
 
@@ -23,9 +24,9 @@ import { UserProfile } from './UserProfile';
         <label>
           Username:
           <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
-        </label>
-        <br />
-        <label>
+          </label>
+
+          <label>
           Email:
           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </label>

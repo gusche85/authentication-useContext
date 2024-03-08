@@ -10,10 +10,10 @@ const { user, signOut } = useAuth();
         <>
           <h2>User Profile</h2>
           <p>
-            <strong>Username:</strong> {user.username}
+            Username: {user.username}
           </p>
           <p>
-            <strong>Email:</strong> {user.email}
+            Email: {user.email}
           </p>
           <button onClick={signOut}>Sign Out</button>
         </>

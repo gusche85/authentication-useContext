@@ -1,4 +1,26 @@
-main {
-  text-align: center;
-  vertical-align: center;
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+
+  
+}
+
+h2 {
+  text-decoration: underline;
+}
+label {
+  margin: 10px;
+  margin-left: 0;
+}
+
+input {
+  margin-left: 5px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 8px;
+  border-color: black;
 }
