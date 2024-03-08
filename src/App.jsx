@@ -6,9 +6,11 @@ import { SignInPage } from './SignInPage';
 
 const App = () => {
   return (
+    <main>
     <AuthProvider>
       <SignInPage />
     </AuthProvider>
+    </main>
   );
 };
 

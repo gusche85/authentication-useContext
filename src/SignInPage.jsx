@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Col, Row } from 'react-bootstrap';
 import { useAuth } from './AuthContext';
 import { UserProfile } from './UserProfile';
 
@@ -22,15 +21,11 @@ import { UserProfile } from './UserProfile';
        <>
         <h2>Sign In</h2>
         <label>
-          Username:
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input type="text" value={username} placeholder="username" onChange={(e) => setUsername(e.target.value)} />
           </label>
-
           <label>
-          Email:
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input type="email" value={email} placeholder="email" onChange={(e) => setEmail(e.target.value)} />
         </label>
-        <br />
         <button onClick={handleSignIn}>Sign In</button>
         <p>Please sign in to view your profile.</p>
       </>
@@ -38,9 +33,4 @@ import { UserProfile } from './UserProfile';
         </>
     );
   };
-
-
-
-
-//export default SignInPage;
 
